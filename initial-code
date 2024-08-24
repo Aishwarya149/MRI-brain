@@ -1,0 +1,52 @@
+import imageio as Brain_tumorIGo
+from matplotlib import pyplot as Brain_tumorOTp
+import numpy as Brain_tumorPyn
+# Visualising Meningioma MRI scan
+Route_of_Image = r'C:\MRI DATA'
+Meningioma_Mri = Route_of_Image+"Meningioma/Te-meTr_0000.jpg"
+Meningioma_Mri = Brain_tumorIGo.imread(Meningioma_Mri)
+
+Brain_tumorOTp.title("Meningioma MRI Image sample")
+Brain_tumorOTp.imshow(Brain_tumorPyn.squeeze(Meningioma_Mri))
+
+# Building CNN model
+Brain_Tumor_Fi_1='training'
+Brain_Tumor_Fi_2='validation'
+Brain_Tumor_Fi_se=2
+Brain_Tumor_Fi_size=(244,244)
+Brain_Tumor_Fi_div=0.2
+
+from tensorflow.keras.utils import image_dataset_from_directory as Brain_tumorASD
+Brain_tumor_TT = Brain_tumorASD('/MRI DATA/', validation_split=Brain_Tumor_Fi_div, subset=Brain_Tumor_Fi_1, seed=Brain_Tumor_Fi_se, image_size=Brain_Tumor_Fi_size, batch_size=100)
+Brain_tumor_VV = Brain_tumorASD('/MRI DATA/', validation_split=Brain_Tumor_Fi_div, subset=Brain_Tumor_Fi_2, seed=Brain_Tumor_Fi_se, image_size=Brain_Tumor_Fi_size, batch_size=100)
+
+rain_tumor_AA='tanh'
+Brain_tumor_SS =(244,244,3)
+Brain_tumor_S='softmax'
+Brain_tumor_LL='SparseCategoricalCrossentropy'
+Brain_tumor_KR=(4,4)
+
+
+from keras.optimizers import Adam as Brain_tumor_OO
+Brain_tumor_OOV= Brain_tumor_OO(learning_rate=0.0001)
+from tensorflow.keras.models import Sequential as Brain_tumorASD1
+from tensorflow.keras.layers import Conv2D as Brain_tumorASD2
+from tensorflow.keras.layers import MaxPooling2D as Brain_tumorASD3
+from tensorflow.keras.layers import Dense as Brain_tumorASD4
+from tensorflow.keras.layers import Flatten as Brain_tumorASD5
+## Building CNN Model
+melanoma_FPq = Brain_tumorASD1([
+    Brain_tumorASD2(32, kernel_size=Brain_tumor_KR, activation=Brain_tumor_AA, padding='same', input_shape=Brain_tumor_SS),
+    Brain_tumorASD3(pool_size=(4,4)),
+
+    Brain_tumorASD2(64, kernel_size=Brain_tumor_KR, activation=Brain_tumor_AA),
+    Brain_tumorASD3(pool_size=(4,4)),
+    Brain_tumorASD5(),
+
+    Brain_tumorASD4(64, activation=Brain_tumor_AA),
+    Brain_tumorASD4(2, activation='softmax')
+    ])
+melanoma_FPq.compile(optimizer= Brain_tumor_OOV, loss= Brain_tumor_LL, metrics=['accuracy'])
+Brain_tumor_Hs =melanoma_FPq.fit(Brain_tumor_TT, validation_data= Brain_tumor_VV, epochs=10, batch_size=1000)
+
+melanoma_FPq.summary()

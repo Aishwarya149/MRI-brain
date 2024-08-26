@@ -40,7 +40,7 @@ melanoma_FPq = Brain_tumorASD1([
     Brain_tumorASD3(pool_size=(4,4)),
 
     Brain_tumorASD2(64, kernel_size=Brain_tumor_KR, activation=Brain_tumor_AA),
-    Brain_tumorASD3(pool_size=(4,4)),
+    Brain_tumorASD3(pool_size=(6,6)),
     Brain_tumorASD5(),
 
     Brain_tumorASD4(64, activation=Brain_tumor_AA),

@@ -6,7 +6,7 @@ MRI Dataset (7,023 brain images) utilized in this research is sourced from Kaggl
 
 I have uploaded 14 files in total(excluding  README file and dataset).
 
-PDM file contains Project and Data Management Plan of my project to give an overview about the research question and obejctive of this project.
+PDM file contains Project and Data Management Plan of my project to give an overview about the research question and objective of this project.
 
 'initial-code' file contains the code that was developed initially during this project.
 

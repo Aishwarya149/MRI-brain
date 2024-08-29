@@ -1,8 +1,9 @@
 # MRI-brain
 Project Title: Minimised CNN for Multi-Class Brain Tumour Detection in MRI Scans
 
-I have uploaded 13 files in total.
-PDM file contains Project and Data Management Plan of my project.
+I have uploaded 13 files in total(excluding  README file).
+
+PDM file contains Project and Data Management Plan of my project to give an overview about the research question and obejctive of this project.
 
 'initial-code' file contains the code that was developed initially during this project.
 
@@ -10,7 +11,7 @@ As per the project description, I have developed codes in files Model 11CNN, Mod
 In Model 13 CNN I have used best number of layers and kernel size, to understand which optimizer gives best result.
 Lastly applied the best number of layers, kernel size, optimizer from previous models (Model 11CNN, Model 12CNN, Model 13CNN) to understand which activation function(Model 14CNN) gives good result to better understand how things are working before going with pretrained models.
 
-Taking into consideration regarding further tuning and further code development 5 distinct DL models are employed for the identification of Brain Tumours in the minimised CNN are in the following: 
+Taking into consideration regarding further tuning and further code development, 5 distinct DL models are employed for the identification of Brain Tumours in the minimised CNN are in the following: 
 
 •	Model 1 CNN - Number of Layers (captures no tumor, tumor region)
 •	Model 2 CNN - Kernel Sizes

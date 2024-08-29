@@ -19,7 +19,7 @@ Taking into consideration regarding further tuning and further code development,
 •	Model 4 CNN- Activation Functions
 •	Model 5 CNN- Batch Sizes
 
-Pretrained Models used and respective code files (by applying the best number of layers, kernel size, optimizer, activation function and batch size from above experimentation) :
+Pretrained Models used and respective code files (by applying the best number of layers, kernel size, optimizer, activation function and batch size from above experimentation) to know which pretrained model gives best results:
 Pretrained Model 1 - VGG16
 Pretrained Model 2 - ResNet50
 Pretrained Model 3 - GoogleNet

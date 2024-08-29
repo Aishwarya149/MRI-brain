@@ -7,7 +7,7 @@ Research Question:
 Research Objectives:
 •	To conduct a detailed literature review of existing literature on brain tumour classification using various deep learning techniques and analyse its strengths and limitations.
 •	To collect the brain tumour MRI dataset from the Kaggle website and pre-process the data by performing necessary steps such as resizing, normalization, and splitting the data into training, validation, and testing sets.
-•	To implement and train the CNN model for multi-class brain tumour classification and experiment with different configurations, including the number of layers, kernel sizes, batch sizes, optimizers, and activation functions.
+•	To implement and train the CNN model for multi-class brain tumour classification and experiment with different configurations, including the number of layers, kernel sizes, batch sizes, optimizers, and activation functions. 
 •	To evaluate the performance of each model configuration for multi-class classification using appropriate metrics, such as accuracy, precision, recall, and F1-score and identify the best-performing model configuration that achieves the highest accuracy for multi-class classification while minimizing training time and model complexity.
 
 Summary of Project and Background
